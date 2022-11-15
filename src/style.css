@@ -1,1 +1,68 @@
-/*# sourceMappingURL=style.css.map */
+.main-container {
+  font-family: "Space Grotesk", sans-serif;
+  display: grid;
+  grid-template-areas: "card form form form form";
+  min-height: 100vh;
+}
+
+.main-container__card {
+  grid-area: card;
+  background: url("images/bg-main-desktop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-container__form {
+  grid-area: form;
+  margin: auto;
+}
+
+.form-info {
+  display: grid;
+  grid-template-areas: "label-name label-name label-name label-name" "name name name name" "label-num label-num label-num label-num" "num num num num" "label-date label-date label-cvc label-cvc" "month year cvc cvc" "btn btn btn btn";
+}
+
+.label-name {
+  grid-area: label-name;
+}
+
+.form-info__name {
+  grid-area: name;
+}
+
+.label-number {
+  grid-area: label-num;
+}
+
+.form-info__number {
+  grid-area: num;
+}
+
+.label-date {
+  grid-area: label-date;
+}
+
+.label-cvc {
+  grid-area: label-cvc;
+}
+
+.form-info__month {
+  grid-area: month;
+}
+
+.form-info__year {
+  grid-area: year;
+}
+
+.form-info__cvc {
+  grid-area: cvc;
+}
+
+.form-info__submit {
+  grid-area: btn;
+}
+
+body {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

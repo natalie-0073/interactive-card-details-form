@@ -11,6 +11,27 @@
     <title>Interactive card details</title>
 </head>
 <body>
-    
+    <main class="main">
+        <div class="main-container">
+            <div class="main-container__card">
+                <div class="card-front"><img src="src/images/bg-card-front.png"/></div>
+                <div class="card-back"><img src="src/images/bg-card-back.png"/></div>
+            </div>
+            <div class="main-container__form">
+                <form class="form-info">
+                    <label class="label-name">CARDHOLDER NAME</label>
+                    <input type="text" placeholder="e.g. Jane Appleseed"class="form-info__name"/>
+                    <label class="label-number">CARD NUMBER</label>
+                    <input type="text" placeholder="e.g. 1234 5678 9123 0000" class="form-info__number"/>
+                    <label class="label-date">EXP.DATE(MM/YY)</label>
+                    <label class="label-cvc">CVC</label>
+                    <input type="text" placeholder="MM" class="form-info__month">
+                    <input type="text" placeholder="YY"class="form-info__year">
+                    <input type="text"placeholder="e.g. 123" class="form-info__cvc">
+                    <button class="form-info__submit">Confirm</button>
+                </form>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
